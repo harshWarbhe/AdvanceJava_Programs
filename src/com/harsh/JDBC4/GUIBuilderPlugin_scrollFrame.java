@@ -80,28 +80,28 @@ public class GUIBuilderPlugin_scrollFrame {
 			@Override
 			public void windowClosing(WindowEvent e) {
 				try {
-					if (rs!=null) {
+					if (rs != null) {
 						rs.close();
 					}
-					
+
 				} catch (Exception e2) {
 					e2.printStackTrace();
 				}
-				
+
 				try {
-					if (ps!=null) {
+					if (ps != null) {
 						ps.close();
 					}
-					
+
 				} catch (Exception e2) {
 					e2.printStackTrace();
 				}
-				
+
 				try {
-					if (con!=null) {
+					if (con != null) {
 						con.close();
 					}
-					
+
 				} catch (Exception e2) {
 					e2.printStackTrace();
 				}
@@ -182,11 +182,11 @@ public class GUIBuilderPlugin_scrollFrame {
 						textField_2.setText(rs.getString(3));
 						textField_3.setText(rs.getString(4));
 					}
-					
+
 				} catch (SQLException e1) {
 					e1.printStackTrace();
 				}
-				
+
 			}
 		});
 		btnNext.setBounds(118, 193, 85, 21);
@@ -203,7 +203,7 @@ public class GUIBuilderPlugin_scrollFrame {
 						textField_2.setText(rs.getString(3));
 						textField_3.setText(rs.getString(4));
 					}
-					
+
 				} catch (SQLException e1) {
 					e1.printStackTrace();
 				}
@@ -217,13 +217,12 @@ public class GUIBuilderPlugin_scrollFrame {
 		btnLast.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-						rs.last();
-						textField.setText(rs.getString(1));
-						textField_1.setText(rs.getString(2));
-						textField_2.setText(rs.getString(3));
-						textField_3.setText(rs.getString(4));
-					
-					
+					rs.last();
+					textField.setText(rs.getString(1));
+					textField_1.setText(rs.getString(2));
+					textField_2.setText(rs.getString(3));
+					textField_3.setText(rs.getString(4));
+
 				} catch (SQLException e1) {
 					e1.printStackTrace();
 				}
