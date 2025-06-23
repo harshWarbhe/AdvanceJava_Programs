@@ -1,0 +1,28 @@
+//JDBC_connTest.java
+import java.sql.*;
+
+public class JDBC_connTest
+{
+	public static void main(String args[]) throws Exception
+	{
+		//Class.forName("oracle.jdbc.driver.OracleDriver");
+		  //1. register jdbc driver
+		 			//a. create jdbc driver class obj
+		 			oracle.jdbc.driver.OracleDriver driverObj = new  oracle.jdbc.driver.OracleDriver();
+		 			
+		 			//register jdbc driver class object with DriverMAnager service
+		 			DriverManager.registerDriver(driverObj);
+
+		//2. establish connection 
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","harsh","tiger");
+
+		if (con == null)
+		{
+			System.out.println("Connection is not establish");
+		}
+		else
+			System.out.println("Connection is establish");
+
+		con.close();
+	}
+}

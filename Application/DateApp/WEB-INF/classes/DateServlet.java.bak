@@ -1,0 +1,40 @@
+//DateServlet.java
+
+package com.harsh.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Date;
+
+import jakarta.servlet.GenericServlet;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletRequest;
+import jakarta.servlet.ServletResponse;
+
+/* import jakarta.servlet;//servlet api
+import java.io.*;//ioStream api
+import java.util.*; */ 
+
+public class DateServlet extends GenericServlet
+{
+	public void service(ServletRequest req,ServletResponse res)throws ServletException,IOException
+	{
+		//set response content type
+		res.setContentType("text/html");
+
+		//get PrintWriter Stream obj response obj
+		PrintWriter pw = res.getWriter();
+
+		//write request processing logic
+		Date d = new Date();
+		
+		//write generated output to response onj using PrintWriter Stream
+		pw.println("<h1>Date and Time :: "+d+"</h1>");
+
+		//close the Stream
+		pw.close();
+
+	}
+
+}
+

@@ -1,0 +1,13 @@
+<web-app>
+	<!-- servlet configuration -->
+		<servlet>
+			<servlet-name>date</serlet-name>
+			<servlet-class>com.harsh.servlet.DateServlet</servlet-class>
+		</servlet>
+
+	<!-- servlet mapping/linking with url -->
+		<servlet-mapping>
+			<servlet-name>date</servlet-name>
+			<url-pattern>/first</url-pattern>
+		</servlet-mapping>
+</web-app>

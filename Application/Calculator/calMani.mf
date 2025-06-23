@@ -1,0 +1,2 @@
+Manifest_Version: 1.0
+Main-Class: com.harsh.project.Calculator

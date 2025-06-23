@@ -1,0 +1,40 @@
+//HtmlServlet.java
+
+package com.nt.servlet;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class HtmlServlet extends HttpServlet
+{
+	protected void service(HttpServletRequest req, HttpServletResponse res)throws ServletException, IOException
+	{
+		//set Content Type
+		res.setContentType("text/html");
+
+		//get PrintWriter stream
+		PrintWriter pw= res.getWriter();
+
+		// output content to browser
+        pw.println("<html><body>");
+        pw.println("<table border='1' align='center'>");
+        pw.println("<tr><th>Player Name</th><th>Medal</th><th>Category</th></tr>");
+        pw.println("<tr><td>Neeraj Chopra</td><td>Gold</td><td>Javelin Throw</td></tr>");
+        pw.println("<tr><td>Meera Bhai Chanu</td><td>Silver</td><td>Weightlifting</td></tr>");
+        pw.println("<tr><td>Ravi Kumar Dahiya</td><td>Silver</td><td>Wrestling</td></tr>");
+        pw.println("<tr><td>P.V. Sindhu</td><td>Bronze</td><td>Badminton</td></tr>");
+        pw.println("<tr><td>Lovlina</td><td>Bronze</td><td>Boxing</td></tr>");
+        pw.println("<tr><td>Hockey Team</td><td>Bronze</td><td>Men's Hockey</td></tr>");
+        pw.println("<tr><td>Bajrang</td><td>Bronze</td><td>Wrestling</td></tr>");
+        pw.println("</table>");
+        pw.println("</body></html>");
+		//close stream
+		pw.close();
+
+	}
+}

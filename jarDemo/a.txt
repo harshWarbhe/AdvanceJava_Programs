@@ -1,0 +1,9 @@
+jar cvf harsh.jar .
+
+jar  tvf harsh.jar
+
+jar uvf harsh.jar c.txt
+
+jar xvf harsh.jar a.txt
+
+

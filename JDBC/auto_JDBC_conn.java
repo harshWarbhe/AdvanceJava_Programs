@@ -1,0 +1,41 @@
+//auto_JDBC_conn.java
+import java.sql.*;
+import java.util.Date;
+
+public class auto_JDBC_conn
+{
+	public static void main(String args[]) throws Exception
+	{
+		//1.load jdbc driver
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+
+		  //1. register jdbc driver
+		 			//a. create jdbc driver class obj
+		 				//oracle.jdbc.driver.OracleDriver driverObj = new  oracle.jdbc.driver.OracleDriver();
+		 			
+		 			//b.register jdbc driver class object with DriverMAnager service
+		 				//DriverManager.registerDriver(driverObj);
+
+		//2. establish connection 
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","harsh","tiger");
+
+		if (con == null)
+		{
+			System.out.println("Connection is not establish");
+		}
+		else
+			System.out.println("Connection is establish");
+		
+		System.out.println("class name of con object :"+con.getClass());	//class name of con object :class oracle.jdbc.driver.T4CConnection
+
+		Statement st = con.createStatement();
+		System.out.println("class name of st object :"+st.getClass());		//class name of st object :class oracle.jdbc.driver.OracleStatementWrapper
+
+
+		Date d = new Date();
+		System.out.println(d.hashCode());
+		System.out.println("class name of d object :"+d.getClass());
+
+		con.close();
+	}
+}
