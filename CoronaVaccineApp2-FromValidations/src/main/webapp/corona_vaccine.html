@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Corona Vaccine App</title>
+  <script type="text/javascript" src="js/validation.js"></script>
+</head>
+<body>
+
+  <h1 style="color: red; text-align: center;">Vaccine Eligibility Check Servlet</h1>
+
+  <form action="coronaurl" method="post" name="frm" onsubmit="return validate(this)">
+    <label>Person Name: </label>
+    <input type="text" name="pname">
+    <span id="pNameId" style="color:red"></span> <br>
+
+    <label>Person City: </label>
+    <input type="text" name="pcity">
+    <span id="pCityId" style="color:red"></span><br>
+
+    <label>Person Age: </label>
+    <input type="text" name="page">
+    <span id="pAgeId" style="color:red"></span><br>
+
+    <input type="submit" value="Check Eligibility">
+  </form>
+
+  <br><br>
+  <h3><a href="coronaurl">Get Wish Message</a></h3>
+
+</body>
+</html>
