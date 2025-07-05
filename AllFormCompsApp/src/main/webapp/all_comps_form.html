@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+}
+
+table {
+	margin: auto;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+td {
+	padding: 8px;
+}
+</style>
+</head>
+<body>
+	<h1 style="color: red; text-align: center">Working with different
+		types of form comps</h1>
+
+	<form action="formurl" method="GET">
+		<table bgcolor="cyan" align="center">
+			<tr>
+				<td>person name :</td>
+				<td><input type="text" name="pname" maxlength="20" required><span
+					style="color: red"></span></td>
+			</tr>
+			<tr>
+				<td>person Age :</td>
+				<td><input type="text" name="page" required><span
+					style="color: red"></span></td>
+			</tr>
+			<tr>
+				<td>person Address :</td>
+				<td><textarea rows="5" cols="20" name="paddrs" maxlength="100"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Gender :</td>
+				<td><input type="radio" name="gender" value="M">Male
+					&nbsp;&nbsp; <input type="radio" name="gender" value="F">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Marital Status :</td>
+				<td><input type="checkbox" name="maritalStatus" value="married">married</td>
+			</tr>
+			<tr>
+				<td>Qualification :</td>
+				<td><select name="qlfy">
+						<option value="" selected="selected">---Select---</option>
+						<option value="Engineer">B.E./b.Tech</option>
+						<option value="medico">MBBS/MD</option>
+						<option value="accountant">B.com/M.com</option>
+						<option value="arts">B.A/M.A</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>language known :</td>
+				<td><select name="language" multiple="multiple">
+						<option value="english">English</option>
+						<option value="marathi">Marathi</option>
+						<option value="hindi">Hindi</option>
+						<option value="telegu">Telugu</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Hobbies :</td>
+				<td><input type="checkbox" name="hb" value="reading">Reading
+					&nbsp;&nbsp; <input type="checkbox" name="hb" value="watchingTV">Watching
+					TV &nbsp;&nbsp; <input type="checkbox" name="hb"
+					value="PlagingCricket">Playing Cricket &nbsp;&nbsp; <input
+					type="checkbox" name="hb" value="travelling">Travelling
+					&nbsp;&nbsp;</td>
+			</tr>
+			<tr>
+				<td>DOB :</td>
+				<td><input type="date" name="dob"></td>
+			</tr>
+			<tr>
+				<td>Time of birth :</td>
+				<td><input type="time" name="tob"></td>
+			</tr>
+			<tr>
+				<td>Month of birth :</td>
+				<td><input type="month" name="mob"></td>
+			</tr>
+			<tr>
+				<td>week number name of birth in DOB year :</td>
+				<td><input type="week" name="wdob"></td>
+			</tr>
+			<tr>
+				<td>select fav number :</td>
+				<td><input type="range" min="0" max="9" name="favNumber">
+				</td>
+			</tr>
+			<tr>
+				<td>Phone number :</td>
+				<td><input type="tel" name="mobileNo"></td>
+			</tr>
+			<tr>
+				<td>email Id :</td>
+				<td><input type="email" name="mail"></td>
+			</tr>
+			<tr>
+				<td>Fav color :</td>
+				<td><input type="color" name="favColor"></td>
+			</tr>
+			<tr>
+				<td>person Income :</td>
+				<td><input type="number" max="100000000" name="income">
+				</td>
+			</tr>
+			<tr>
+				<td>fb URL :</td>
+				<td><input type="url" name="fburl"></td>
+			</tr>
+			<tr>
+				<td>Fav google search String :</td>
+				<td><input type="search" name="favSearch"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="process detail"></td>
+				<td><input type="reset" name="cancel"></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>
