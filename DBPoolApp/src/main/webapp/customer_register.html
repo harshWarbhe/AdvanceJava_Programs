@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Customer Registration</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            text-align: center;
+            
+        }
+        h1 {
+            color: #e74c3c;
+            text-align: center;
+        }
+        table {
+        		align-items:center;
+            background-color: #e0f7fa;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            
+        }
+        td {
+            padding: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            
+        }
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #26a69a;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #00796b;
+        }
+    </style>
+</head>
+<body>
+	<h1 style="color: red; text-align: center">Customer Registration
+		page</h1>
+	<form action="custurl" method="post">
+		<table >
+			<tr>
+				<td>Customer name :: </td>
+				<td><input type="text" name="cname"></td>
+			</tr>
+			<tr>
+				<td>Customer address ::</td>
+				<td><input type="text" name="cadd"></td>
+			</tr>
+			<tr>
+				<td>Customer billAmount ::</td>
+				<td><input type="text" name="billAmt"></td>
+			</tr>
+			<tr>
+				<td>Customer mobileNo ::</td>
+				<td><input type="number" name="mobileNo"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="register"></td>
+				<td><input type="reset" value="cancel"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

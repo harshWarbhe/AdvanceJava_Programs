@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Search Employee</title>
+ <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #e0ffff;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 8px 16px;
+            margin: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        input[type="submit"]:hover,
+        input[type="reset"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+	<form action="dburl" method="post">
+		<table bgcolor="cyan" align="center">
+			<tr>
+				<td>Employee Number ::</td>
+				<td><input type="text" name="eno" placeholder="Enter EMP No." required></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="searchDetails"></td>
+				<td><input type="reset" value="cancel"></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
