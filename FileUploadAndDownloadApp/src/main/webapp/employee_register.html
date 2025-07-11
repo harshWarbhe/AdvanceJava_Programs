@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+	background-color: #f4f4f4;
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	color: #0077cc;
+	text-align: center;
+}
+
+table {
+	background-color: #e0f7fa;
+	margin: 30px auto;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 0 10px #aaa;
+}
+
+td {
+	padding: 10px;
+	font-weight: bold;
+}
+
+input[type="text"], input[type="file"] {
+	padding: 6px;
+	width: 100%;
+}
+
+input[type="submit"], input[type="reset"] {
+	padding: 8px 16px;
+	font-weight: bold;
+	background-color: #0077cc;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="reset"] {
+	background-color: #e91e63;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+	opacity: 0.9;
+}
+</style>
+</head>
+<body>
+	<h1>File Uploading and Downloading example app</h1>
+
+	<form action="uploadurl" method="post" enctype="multipart/form-data">
+		<table>
+			<tr>
+				<td>Employee name ::</td>
+				<td><input type="text" name="ename" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Address ::</td>
+				<td><input type="text" name="eaddr" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Resume ::</td>
+				<td><input type="file" name="resume" /></td>
+			</tr>
+
+			<tr>
+				<td>Employee Photo ::</td>
+				<td><input type="file" name="photo" /></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" value="register"></td>
+				<td><input type="reset" value="cancle"></td>
+			</tr>
+
+
+
+		</table>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Page</title>
+<style>
+body {
+	text-align: center;
+}
+
+h2 {
+	color: red;
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<h2>SendRedirection using hyperlinks</h2>
+	<form action="searchurl" method="POST">
+		<table border="1" text-align="center" bgcolor="cyan">
+			<tr>
+				<th>Search String: </th>
+				<th><input type="text" name="s"></th>
+			</tr>
+			<tr>
+				<th>Search Engine:</th>
+				<th><input type="radio" name="engine" value="google" checked>
+					Google <input type="radio" name="engine" value="bing"> Bing
+					<input type="radio" name="engine" value="yahoo"> Yahoo
+					Search</th>
+			</tr>
+			<tr>
+				<th><input type="submit" value="Search"></th>
+				<th><input type="reset" value="Cancel"></th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
