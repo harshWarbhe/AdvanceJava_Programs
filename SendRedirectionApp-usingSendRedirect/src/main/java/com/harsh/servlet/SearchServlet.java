@@ -19,6 +19,8 @@ public class SearchServlet extends HttpServlet {
 
 		String ss = req.getParameter("s");
 		String engine = req.getParameter("engine");
+		
+		//send hyperlink to brower having url to complete sendRedirection
 		String url = null;
 		
 
@@ -30,7 +32,17 @@ public class SearchServlet extends HttpServlet {
 			url = "https://www.yahoo.com/search?q=" + ss;
 		}
 
-		pw.println("<h1 style='color:red;text-align:center'>" + "<a href='" + url + "'>Go to " + engine + "</a></h1>");
+		//perform sendDirection
+		System.out.println("before res.sendRedirection");
+		
+		pw.println("<b>HELLO</b>");
+		res.sendRedirect(url);
+		
+		System.out.println("After res.sendRedirection");
+
+		pw.println("<b>hai</b>");
+		
+		//pw.println("<h1 style='color:red;text-align:center'>" + "<a href='" + url + "'>Go to " + engine + "</a></h1>");
 
 		pw.close();
 	}

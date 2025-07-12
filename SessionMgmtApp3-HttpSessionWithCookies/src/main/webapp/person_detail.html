@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Person Details Form</title>
+<style>
+body {
+	font-family: Arial, sans-serif;
+	background-color: #eef2f3;
+}
+
+h2{
+	color: blue;
+	text-align: center;
+}
+
+table {
+	text-align: center;
+	align-content: center;
+	background-color: cyan;
+}
+</style>
+</head>
+<body>
+	<h2>Personal Information Form</h2>
+	<form action="firsturl" method="POST">
+		<table align="center">
+			<tr>
+				<td>Person Name:</td>
+				<td><input type="text" name="pname" required /></td>
+			</tr>
+			<tr>
+				<td>Father's Name:</td>
+				<td><input type="text" name="fname" required /></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td><input type="text" name="address" required /></td>
+			</tr>
+			<tr>
+				<td>Marital Status:</td>
+				<td><input type="radio" name="ms" value="single" required>Single
+					<input type="radio" name="ms" value="married">Married</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="continue" /></td>
+				<td><input type="reset" value="cancel" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
