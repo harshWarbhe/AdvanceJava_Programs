@@ -35,6 +35,8 @@ public class FirstServlet extends HttpServlet {
 		ses.setAttribute("fname", fname);
 		ses.setAttribute("addrs", addrs);
 		ses.setAttribute("ms", ms); 
+		
+		//httpSession with url rewriting
 
 		// generate form2 based on marital status value
 		if (ms.equalsIgnoreCase("married")) {
