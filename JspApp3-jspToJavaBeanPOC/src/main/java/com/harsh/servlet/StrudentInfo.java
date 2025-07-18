@@ -1,4 +1,4 @@
-package com.harsh.beans;
+package com.harsh.servlet;
 
 import java.io.Serializable;
 
