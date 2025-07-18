@@ -1,4 +1,4 @@
-<%@page import="com.harsh.servlet.*"%>
+<%@page import="com.harsh.beans.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 <body>
 
 	<!-- create or lacate java bean class obj -->
-	<jsp:useBean id="st" class="com.harsh.servlet.StrudentInfo"
+	<jsp:useBean id="st" class="com.harsh.beans.StrudentInfo"
 		scope="session"></jsp:useBean>
 
 	<!-- set value to bean properties -->
