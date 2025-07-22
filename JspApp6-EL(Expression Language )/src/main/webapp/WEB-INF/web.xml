@@ -5,6 +5,6 @@
 	id="WebApp_ID" version="6.0">
 	<display-name>JspApp4-MVC1-EmpSalaryApp</display-name>
 	<welcome-file-list>
-		<welcome-file>read-data.jsp</welcome-file>
+		<welcome-file>emp_detail.html</welcome-file>
 	</welcome-file-list>
 </web-app>

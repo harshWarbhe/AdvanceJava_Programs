@@ -1,4 +1,4 @@
-<%@page import="com.harsh.beans.*, com.harsh.service.*"%>
+<%@page import="com.harsh.dao.*,com.harsh.service.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 <body>
 
 	<!-- create or locate java bean class object -->
-	<jsp:useBean id="emp" class="com.harsh.beans.Employee" scope="request"></jsp:useBean>
+	<jsp:useBean id="emp" class="com.harsh.dao.Employee" scope="request"></jsp:useBean>
 
 	<!-- Write form data to java bean class object -->
 	<jsp:setProperty property="*" name="emp" />
